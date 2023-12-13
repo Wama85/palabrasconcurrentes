@@ -2,10 +2,10 @@
   "name": "parcel-jest-base",
   "version": "1.0.0",
   "description": "",
-  "default": "index.html",
+  "default": "calcularpago.html",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "start": "parcel index.html calcularpago.html ",
+    "build": "parcel build index.html calcularpago.html",
     "test": "jest --watch",
     "test-once": "jest --verbose --coverage",
     "cypress": "cypress open",

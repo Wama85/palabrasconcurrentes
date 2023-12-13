@@ -1,15 +1,20 @@
-function ocurrencia(palabra){
-    const contarpalabra={};
-    const oraciones=palabra.split(' ')
-    if (palabra !='')
-  {
-      oraciones.forEach((oracion)=>{
-        contarpalabra[oracion]=(contarpalabra[oracion] || 0) + 1 ;
-      });
+function ocurrencia(frase){
+  const resultado={};
+  const oracion=frase.split(' ');
+  if(frase !=''){
+  for(let i=0;i<oracion.length;i++){
+    const palabra=oracion[i];
   
-      return contarpalabra;
+  if(resultado[palabra]){
+    resultado[palabra]++;
   }
-  return {};
+  else{
+    resultado[palabra]=1;
+  }
+}
+}
+  return resultado;
+   
     
   }
   export default ocurrencia;
